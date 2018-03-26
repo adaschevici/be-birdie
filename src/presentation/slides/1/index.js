@@ -2,10 +2,11 @@ import React from 'react';
 import { Slide, Heading, Text, Appear } from 'spectacle';
 import styles from './style.scss';
 
-  console.log(styles);
-
 export default (
-  <Slide transition={["spin"]} bgColor="primary">
+  <Slide
+    transition={["zoom", "slide"]}
+    bgColor="primary"
+  >
     <Appear>
       <div>
       <Heading size={6} textColor="primary" caps>Typography</Heading>
