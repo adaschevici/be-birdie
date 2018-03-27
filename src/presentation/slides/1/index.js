@@ -1,24 +1,36 @@
 import React from 'react';
-import { Slide, Heading, Text, Appear } from 'spectacle';
-import styles from './style.scss';
+import { Slide, Image, Text, Appear } from 'spectacle';
+import style from './style.scss';
+
+import preloader from "spectacle/lib/utils/preloader";
+
+import Logo from '../../utils/logo';
+
+const images = {
+  blueHeart: require('../../../assets/blue-heart.png'),
+};
+
+preloader(images);
 
 export default (
   <Slide
     transition={["zoom", "slide"]}
     bgColor="primary"
   >
-    <Appear>
-      <div>
-      <Heading size={6} textColor="primary" caps>Typography</Heading>
-      <Heading size={1} textColor="secondary">Heading 1</Heading>
-    </div>
-    </Appear>
-    <Heading size={2} textColor="secondary">Heading 2</Heading>
-    <Heading size={3} textColor="secondary">Heading 3</Heading>
-    <Heading size={4} textColor="secondary">Heading 4</Heading>
-    <Heading size={5} textColor="secondary">Heading 5</Heading>
-    <Appear>
-      <div className={styles.title}>Standard text</div>
-    </Appear>
+    <Image
+      src={images.blueHeart.replace("/", "")}
+      className={style.blueHeart}
+    />
+    <Text
+      className={style.greyHelvetica}
+    >
+      Meet birdie,
+    </Text>
+    <Text
+      className={style.greyHelvetica2}
+    >
+      your care companion
+    </Text>
+    <Logo />
   </Slide>
 );
