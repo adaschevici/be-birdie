@@ -11,9 +11,9 @@ const theme = createTheme({
 
 const importSlides = [
   import('./slides/1'),
-  import('./slides/4'),
   import('./slides/2'),
   import('./slides/3'),
+  import('./slides/4'),
 ];
 
 export default class Presentation extends Component {

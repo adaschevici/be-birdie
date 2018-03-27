@@ -15,9 +15,9 @@ const logoClass = {
   height: '140px',
 };
 
-export default () => (
+export default (props) => (
   <Image
-    style={logoClass}
     src={images.logo.replace("/", "")}
+    style={{...logoClass, ...props.styles}}
   />
 );
