@@ -17,10 +17,17 @@ export default (
     transition={["zoom", "slide"]}
     bgColor="primary"
   >
-    <Image
-      src={images.iosTimeline.replace("/", "")}
-      className={style.iosTimeline}
-    />
-    <Logo styles={{ marginTop: '-30%', marginLeft: '80%' }} />
+    <div
+      className={style.columnClass}
+    >
+      <Text className={style.flow}>
+        Seamless communication and coordination
+      </Text>
+      <Image
+        src={images.iosTimeline.replace("/", "")}
+        className={style.iosTimeline}
+      />
+    </div>
+    <Logo styles={{ marginTop: '-105%', marginLeft: '90%' }} />
   </Slide>
 );
