@@ -26,11 +26,13 @@ export default (
     >
       Meet birdie,
     </Text>
-    <Text
-      className={style.greyHelvetica2}
-    >
-      your care companion
-    </Text>
+    <Appear>
+      <Text
+        className={style.greyHelvetica2}
+      >
+        your care companion
+      </Text>
+    </Appear>
     <Logo />
   </Slide>
 );
