@@ -1,3 +1,19 @@
 .title {
   color: lighten(red, 20%);
 }
+
+.concerns {
+  margin-top: -400px !important;
+}
+
+.flow {
+  color: #808080 !important;
+  width: 40% !important;
+  margin-left: 10% !important;
+}
+
+.columnClass {
+  display: flex;
+  flex-direction: row !important;
+  margin-left: -25% !important;
+}

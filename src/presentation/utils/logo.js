@@ -11,8 +11,8 @@ preloader(images);
 
 const logoClass = {
   marginTop: '-70%',
-  marginLeft: '90%',
-  height: '140px',
+  marginLeft: '100%',
+  height: '80px',
 };
 
 export default (props) => (

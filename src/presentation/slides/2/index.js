@@ -28,6 +28,6 @@ export default (
         className={style.iosTimeline}
       />
     </div>
-    <Logo styles={{ marginTop: '-105%', marginLeft: '90%' }} />
+    <Logo styles={{ marginTop: '-100%', marginLeft: '100%' }} />
   </Slide>
 );
